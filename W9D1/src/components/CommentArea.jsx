@@ -9,7 +9,7 @@ const CommentArea = function (props) {
   //   recensioni: [],
   // };
   const [recensioni, setRecensioni] = useState([]);
-  // Usa useEffect per aggiornare solo l'elementId
+
   useEffect(() => {
     if (props.asin) {
       getRece();
@@ -52,7 +52,7 @@ const CommentArea = function (props) {
   // };
 
   return (
-    <div>
+    <div className=" position-fixed w-25">
       <AddComment asin={props.asin} />
       <CommentList rec={recensioni} />
     </div>

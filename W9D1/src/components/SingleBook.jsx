@@ -8,7 +8,7 @@ const SingleBook = function (props) {
     <>
       <Col xl={4}>
         <Card
-          className=" w-100"
+          className=" h-100 shadow-sm"
           style={{
             border:
               props.asinLibroSelezionato === props.asin
@@ -28,7 +28,7 @@ const SingleBook = function (props) {
               props.cambiaAsin(props.asin); // invoca changeAsin in BookList
             }}
           />
-          <Card.Body className="d-flex flex-column justify-content-between bg-dark">
+          <Card.Body className="d-flex flex-column justify-content-between bg-dark ">
             <Card.Title className="text-center text-light">
               {props.title}
             </Card.Title>

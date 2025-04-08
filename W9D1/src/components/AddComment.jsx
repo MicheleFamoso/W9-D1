@@ -48,13 +48,14 @@ const AddComment = function (props) {
   };
   console.log(props.asin, "asinooooo");
   return (
-    <ListGroup>
+    <ListGroup className="mb-3 shadow-sm">
       <ListGroupItem>
-        <Form onSubmit={invia}>
+        <Form onSubmit={invia} className=" mb-3">
           <FormGroup>
             <FormLabel>Recensione</FormLabel>
             <FormControl
               type="text"
+              className=" mb-3"
               placeholder="Recensisci"
               value={review.comment}
               required
@@ -97,7 +98,9 @@ const AddComment = function (props) {
             </Form.Select>
           </Form.Group>
 
-          <Button type="submit">Invia</Button>
+          <Button className="mt-3" variant="success" type="submit">
+            Invia
+          </Button>
         </Form>
       </ListGroupItem>
     </ListGroup>

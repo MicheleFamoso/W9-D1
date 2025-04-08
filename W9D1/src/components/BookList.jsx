@@ -42,7 +42,7 @@ const BookList = function (props) {
       <Container>
         <Row>
           <Col xs={12} md={8}>
-            <Row>
+            <Row className=" g-3">
               {props.book
                 .filter((libro) => {
                   if (libro.title.includes(search)) {
