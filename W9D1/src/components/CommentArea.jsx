@@ -52,7 +52,7 @@ const CommentArea = function (props) {
   // };
 
   return (
-    <div className=" position-fixed w-25">
+    <div className=" position-fixed w-25" data-testid= "prova">
       <AddComment asin={props.asin} />
       <CommentList rec={recensioni} />
     </div>
